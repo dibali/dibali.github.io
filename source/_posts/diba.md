@@ -93,8 +93,9 @@ tags:
 ***
 ```
 ### 十一 代码
+
 代码块`tab+`
----
+
 	`tab+`
 	function __construct (){
 		$this->sdb = cmi::db('DASH_SDB');
@@ -102,7 +103,6 @@ tags:
 		$this->stats_sdb = cmi::db('STATS_SDB');
 
 	}
-
 
 
 > 完结
