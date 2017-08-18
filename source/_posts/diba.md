@@ -32,6 +32,8 @@ tags:
 - line 3
 ```
 
+<!-- more -->
+
 ### 四 有序列表
 1. line 1
 2. line 2

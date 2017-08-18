@@ -29,6 +29,8 @@ $ mkdir test
 $ git init
 ```
 
+<!-- more -->
+
 在test存放你的代码文件
 ```
 git add index.php 把 index.php 提交到暂存区
@@ -132,9 +134,9 @@ git remote add origin https://git.oschina.net/lianshou/test.git
 git remote rename origin online 修改远程仓库名(代称)
 ```
 
-> FROM   西岭老湿(http://www.xiling.me)
+> FROM 西岭老湿(http://www.xiling.me)
 
-> 接下来 ，推荐 [git+hexo](http://127.0.0.1:8080/)命令巩固
+> 接下来 ，推荐 [十八哥农场](http://www.yanshiba.com/)
 
 > 本章完结
 

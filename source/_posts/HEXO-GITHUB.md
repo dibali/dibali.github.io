@@ -27,6 +27,8 @@ tags:
 - themes
 - `_config.yml`
 
+<!-- more -->
+
 3. vim `_config.yml`:
 翻到最后，将代码改成下面的样子：
 
