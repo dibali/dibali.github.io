@@ -50,3 +50,9 @@ hexo deploy
 ```
 
 > FROM  潘柏信(http://www.jianshu.com/p/465830080ea9)
+
+> 接下来 ，推荐 [git+hexo](/2017/08/18/git-hexo-command/)命令巩固
+
+> 本章完结
+
+>     谢谢支持
