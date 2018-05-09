@@ -36,7 +36,7 @@ $ git init
 git add index.php 把 index.php 提交到暂存区
 git commit -m "新建index.php" 把 index.php 提交到版本库
 git add . 提交所有变动
-gti status 查看需要提交的缓冲文件
+git status 查看需要提交的缓冲文件
 git commit -m
 ```
 
