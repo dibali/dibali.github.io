@@ -5,15 +5,22 @@
   
 
   
-  <title>DIBA HOME</title>
+  <title>HEXO FIRST DAY | DIBA HOME</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="DIBA HOME">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="Study now markdown 语法 一 粗体1**粗体** 二 斜体1*斜体* 三 无序列表 line 1 line 2 line 3  1234- 无序列表- line 1- line 2- line 3 四 有序列表 line 1 line 2 line 3  1231. line 12. line 23. line 3 五 表格   name sex age     Lucy wom">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HEXO FIRST DAY">
+<meta property="og:url" content="http://yoursite.com/2017/08/17/diba/index.html">
 <meta property="og:site_name" content="DIBA HOME">
+<meta property="og:description" content="Study now markdown 语法 一 粗体1**粗体** 二 斜体1*斜体* 三 无序列表 line 1 line 2 line 3  1234- 无序列表- line 1- line 2- line 3 四 有序列表 line 1 line 2 line 3  1231. line 12. line 23. line 3 五 表格   name sex age     Lucy wom">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1502963667323&di=a5a4f89fae8f0599141532d8812dabcd&imgtype=0&src=http%3A%2F%2Fzh.mweb.im%2Fasset%2Fmweb%2Fcn%2F1-5.jpg">
+<meta property="og:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1502964830850&di=25890fa68e19544d9348d06db28cfba8&imgtype=0&src=http%3A%2F%2Fwww.uqidong.com%2Fuploads%2Forsoon%2F20160516031338507.gif">
+<meta property="og:updated_time" content="2018-05-09T06:50:45.893Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="DIBA HOME">
+<meta name="twitter:title" content="HEXO FIRST DAY">
+<meta name="twitter:description" content="Study now markdown 语法 一 粗体1**粗体** 二 斜体1*斜体* 三 无序列表 line 1 line 2 line 3  1234- 无序列表- line 1- line 2- line 3 四 有序列表 line 1 line 2 line 3  1231. line 12. line 23. line 3 五 表格   name sex age     Lucy wom">
+<meta name="twitter:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1502963667323&di=a5a4f89fae8f0599141532d8812dabcd&imgtype=0&src=http%3A%2F%2Fzh.mweb.im%2Fasset%2Fmweb%2Fcn%2F1-5.jpg">
   
     <link rel="alternate" href="/atom.xml" title="DIBA HOME" type="application/atom+xml">
   
@@ -60,90 +67,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-mysql" class="article article-type-post" itemscope="" itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/04/27/mysql/" class="article-date">
-  <time datetime="2018-04-27T10:06:24.000Z" itemprop="datePublished">2018-04-27</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/04/27/mysql/">mysql</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="what型语言：SQL三种类型"><a href="#what型语言：SQL三种类型" class="headerlink" title="what型语言：SQL三种类型"></a>what型语言：SQL三种类型</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">数据操作语言：DML is Data Manipulation Language statements.  SQL中处理数据等操作统称为数据操纵语言 增删改查</span><br><span class="line">数据定义语言：DDL is Data Definition Language statements.  用于定义和管理SQL 数据库中的所有对象的语言</span><br><span class="line">            (建设者的角度,建表,建库,建视图 等等, 15%)</span><br><span class="line">数据控制语言: DCL is Data Control Language statements.  用来授予或回收访问数据库的某种特权，并控制数据库操纵事务发生的时间及效果，</span><br><span class="line">            对数据库实行监视等(管理员角度,DBA[数据库管理员],5%) 这个用户是否有权限建表,等</span><br></pre></td></tr></table></figure>
-<h2 id="子查询"><a href="#子查询" class="headerlink" title="子查询"></a>子查询</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">where型子查询：select goods_id,goods_name from goods where goods_id=(select max(goods_id) from goods);</span><br><span class="line">from型子查询：select goods_id,goods_name,cat_id from (select goods_id,cat_id,goods_name from goods</span><br><span class="line">            order by cat_id asc,goods_id desc) as tmp group by cat_id</span><br><span class="line">exist型子查询：select * from category where exists (select * from goods where category.cat_id=goods.cat_id);</span><br></pre></td></tr></table></figure>
-<h2 id="dd"><a href="#dd" class="headerlink" title="dd"></a>dd</h2>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/04/27/mysql/" data-id="cjppdoc1j00037gadhdmz5hmu" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-git-hexo-command" class="article article-type-post" itemscope="" itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/08/18/git-hexo-command/" class="article-date">
-  <time datetime="2017-08-18T03:00:25.000Z" itemprop="datePublished">2017-08-18</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/18/git-hexo-command/">git+hexo命令</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="hexo常用命令"><a href="#hexo常用命令" class="headerlink" title="hexo常用命令"></a>hexo常用命令</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">hexo new&quot;postName&quot; #新建文章</span><br><span class="line">hexo new page&quot;pageName&quot; #新建页面</span><br><span class="line">hexo generate #生成静态页面至public目录</span><br><span class="line">hexo server #开启预览访问端口（默认端口4000，&apos;ctrl + c&apos;关闭server）</span><br><span class="line">hexo deploy #将.deploy目录部署到GitHub</span><br><span class="line">hexo help # 查看帮助</span><br><span class="line">hexo version #查看Hexo的版本</span><br></pre></td></tr></table></figure>
-<h2 id="git命令"><a href="#git命令" class="headerlink" title="git命令"></a>git命令</h2><p>在你用git之前,要先报家门,否则代码不能提交<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name diba</span><br><span class="line">$ git config --global user.email dba.li@163.com</span><br></pre></td></tr></table></figure></p>
-<p>创建版本库<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ cd E:/</span><br><span class="line">$ mkdir test</span><br><span class="line">$ git init</span><br></pre></td></tr></table></figure></p>
-        
-          <p class="article-more-link">
-            <a href="/2017/08/18/git-hexo-command/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/08/18/git-hexo-command/" data-id="cjppdoc1900017gadsk04h67f" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-diba" class="article article-type-post" itemscope="" itemprop="blogPost">
+        <section id="main"><article id="post-diba" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/08/17/diba/" class="article-date">
   <time datetime="2017-08-17T02:14:54.000Z" itemprop="datePublished">2017-08-17</time>
@@ -156,8 +80,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/17/diba/">HEXO FIRST DAY</a>
+    <h1 class="article-title" itemprop="name">
+      HEXO FIRST DAY
     </h1>
   
 
@@ -228,56 +152,28 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-hello-world" class="article article-type-post" itemscope="" itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/08/17/hello-world/" class="article-date">
-  <time datetime="2017-08-17T02:10:25.000Z" itemprop="datePublished">2017-08-17</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+    <a href="/2017/08/18/git-hexo-command/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
         
+          git+hexo命令
+        
+      </div>
+    </a>
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/17/hello-world/">Hello World</a>
-    </h1>
   
+    <a href="/2017/08/17/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/08/17/hello-world/" data-id="cjppdoc1900027gadsfvxvv7t" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-
 
 </section>
         
